@@ -1,8 +1,9 @@
+```mermaid
 sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET [new-note](https://studies.cs.helsinki.fi/exampleapp/new_note)
+    browser->>server: GET (https://studies.cs.helsinki.fi/exampleapp/new_note)
     activate server
     server-->>browser: 302 found (redirect)
     deactivate server
@@ -24,6 +25,7 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: [{"content": "Kurdistan thanks you for this course",
-        "date": "2026-07-30T22:15:21.159Z"},... ]
+    server-->>browser: [{"content": "Kurdistan thanks you for this course","date": "2026-07-30T22:15:21.159Z"},...]
     deactivate server
+    
+```

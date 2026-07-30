@@ -1,3 +1,19 @@
-p {
-  color: red;
+html {
+  /* px means "pixels". The base font size is now 10 pixels high */
+  font-size: 25px;
+  /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
+  font-family: "Dancing Script", cursive;
+  font-weight: 400; /* Adds the missing weight value */
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
 }
